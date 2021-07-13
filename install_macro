@@ -1,0 +1,4 @@
+pushd clr-build
+install -dm 0755 %{buildroot}/usr/bin/
+install -m 755 -p ifrextract %{buildroot}/usr/bin/ifrextract
+popd
