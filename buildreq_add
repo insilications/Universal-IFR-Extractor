@@ -1,13 +1,5 @@
 # This file contains additional build requirements that did not get
 # picked up automatically. One name per line, no whitespace.
-#qtdeclarative
-#qtdeclarative-dev
-#qtlocation
-#qtlocation-dev
-#qtwebchannel
-#qtwebchannel-dev
-#qtwebengine
-#qtwebengine-dev
 binutils-dev
 buildreq-cmake
 buildreq-qmake
@@ -33,9 +25,6 @@ qtsvg
 qtsvg-dev
 qttools-dev
 readline-dev
-sqlite-autoconf-dev
-sqlite-autoconf-lib
-sqlite-autoconf-staticdev
 tcl
 tcl-dev
 tcl-staticdev

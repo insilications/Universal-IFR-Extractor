@@ -1,17 +1,5 @@
 # This file contains additional pkgconfig build requirements that did
 # not get picked up automatically. One name per line, no whitespace.
-#Qt5Location
-#Qt5Script
-#Qt5Sensors
-#Qt5SerialPort
-#Qt5WebChannel
-#Qt5WebSockets
-#Qt5Pdf
-#Qt5PdfWidgets
-#Qt5WebEngine
-#Qt5WebEngineCore
-#Qt5WebEngineWidgets
-#sqlcipher
 Qt5Concurrent
 Qt5Core
 Qt5DBus
