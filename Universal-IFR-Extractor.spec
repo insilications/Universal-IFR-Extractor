@@ -11,6 +11,7 @@ Source0  : file:///aot/build/clearlinux/packages/Universal-IFR-Extractor/Univers
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-2.0
+Requires: Universal-IFR-Extractor-bin = %{version}-%{release}
 BuildRequires : binutils-dev
 BuildRequires : buildreq-cmake
 BuildRequires : buildreq-qmake
@@ -72,6 +73,14 @@ BuildRequires : zlib-staticdev
 %description
 No detailed description available
 
+%package bin
+Summary: bin components for the Universal-IFR-Extractor package.
+Group: Binaries
+
+%description bin
+bin components for the Universal-IFR-Extractor package.
+
+
 %prep
 %setup -q -n Universal-IFR-Extractor
 cd %{_builddir}/Universal-IFR-Extractor
@@ -82,7 +91,7 @@ unset https_proxy
 unset no_proxy
 export SSL_CERT_FILE=/var/cache/ca-certs/anchors/ca-certificates.crt
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1659592396
+export SOURCE_DATE_EPOCH=1659592499
 mkdir -p clr-build
 pushd clr-build
 ## altflags1f content
@@ -151,7 +160,7 @@ make  %{?_smp_mflags}    V=1 VERBOSE=1
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1659592396
+export SOURCE_DATE_EPOCH=1659592499
 rm -rf %{buildroot}
 ## altflags1f content
 ## altflags1
@@ -225,3 +234,7 @@ popd
 
 %files
 %defattr(-,root,root,-)
+
+%files bin
+%defattr(-,root,root,-)
+/usr/bin/ifrextract
